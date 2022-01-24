@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                    DESC
 
-  spec.homepage     = "https://github.com/mukeshlokare/scframework"
+  spec.homepage     = "http://EXAMPLE/scframework"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -52,10 +52,10 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "mukeshlokare" => "mukesh.lokare1@gmail.com" }
-  # Or just: spec.author    = "mukeshlokare"
-  # spec.authors            = { "mukeshlokare" => "mukesh.lokare1@gmail.com" }
-  
+  spec.author             = { "aplyamukesh" => "mukesh.neosoft@apalya.com" }
+  # Or just: spec.author    = "aplyamukesh"
+  # spec.authors            = { "aplyamukesh" => "mukesh.neosoft@apalya.com" }
+  # spec.social_media_url   = "https://twitter.com/aplyamukesh"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/mukeshlokare/scframework.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "http://EXAMPLE/scframework.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "scframework/**/*.{swift}"
-  # spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -105,8 +105,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resources = "scframework/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-  
+  # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
