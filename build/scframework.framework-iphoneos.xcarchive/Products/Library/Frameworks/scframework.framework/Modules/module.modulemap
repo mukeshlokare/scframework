@@ -1,0 +1,11 @@
+framework module scframework {
+  umbrella header "scframework.h"
+
+  export *
+  module * { export * }
+}
+
+module scframework.Swift {
+    header "scframework-Swift.h"
+    requires objc
+}
