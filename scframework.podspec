@@ -12,14 +12,14 @@ Pod::Spec.new do |spec|
   spec.summary      = "Adding framework for arithmatic integration."
   spec.description  = "Adding framework for arithmatic integration. add, sum etc"
   spec.homepage     = "https://github.com/mukeshlokare/scframework"
-  spec.license      = "MIT"
+  spec.license = { :type => "MIT", :text => "MIT License" }
   spec.authors            = { "mukeshlokare" => "mukesh.lokare1@gmail.com" }
   spec.platform     = :ios
   spec.platform = :ios
   spec.swift_version = "5.0"
   spec.ios.deployment_target  = '12.0'
   spec.source       = { :git => "https://github.com/mukeshlokare/scframework.git", :tag => "#{spec.version}" }
-  spec.vendored_frameworks = "scframework.xcframework"
+  spec.source_files  = "scframework/**/*.{h,m}"
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
